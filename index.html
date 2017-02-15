@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="main.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
@@ -12,7 +13,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div class="container">
     <h1>Frisco's Portfolio</h1>
       <div class="parallax-container">
         <div class="parallax"><img src="images/parallax1.jpg"></div>
@@ -26,8 +26,12 @@
       <div class="parallax-container">
         <div class="parallax"><img src="images/parallax2.jpg"></div>
       </div>
-  </div>
 
 </body>
+  <script>
+      $(document).ready(function(){
+        $('.parallax').parallax();
+      });
 
+  </script>
 </html>
