@@ -1,5 +1,13 @@
-body {
-    background-color: teal;
+$primary: #E5EEC1;
+$secondary: #A2D4AB;
+$base: #3EACA8;
+$accent: #547A82;
+$dark: #5A5050;
+
+
+.homepage {
+    background: linear-gradient($primary,$secondary,$base,$accent);
+    color: $dark;
 }
 
 img {
