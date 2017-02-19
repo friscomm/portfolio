@@ -34,9 +34,10 @@ $dark-2: #5A5050 * .8;
   display: inline;
   padding-right: 5%;
   padding-left: 5%;
-  padding-bottom: 3%;
+  padding-bottom: 4%;
   padding-top: 15px;
   border-top: 2px solid transparent;
+  transition: border-top 1s, background-color 1s;
 }
 
 .navbar li:hover {
