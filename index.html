@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-  <div class="section homepage">
+  <div class="section homepage" id="home">
     <div class="row container">
       <h1 class="header center-align">Frisco Allen Miranda</h1>
       <p class="grey-text text-darken-3 lighten-3">Entry-level developer looking for a job where I can use my technical, communication, and organiziation skills to build cool stuff with a team that solves real-world problems.</p>
@@ -25,12 +25,33 @@
             <img class="circle headshot" src="images/headshot.jpg"/>
           </div>
         </div>
+        <div class="row">
+            <div class="navbar col s8">
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#bio">Bio</a>
+                </li>
+                <li>
+                  <a href="#project">Projects</a>
+                </li>
+                <li>
+                  <a href="#work">Work Experience</a>
+                </li>
+                <li>
+                  <a href="#education">Education</a>
+                </li>
+              </ul>
+            </div>
+        </div>
       </div>
     </div>
       <div class="parallax-container">
         <div class="parallax"><img src="images/bluffs.jpg"></div>
       </div>
-      <div class="section bioSection">
+      <div class="section bioSection" id="bio">
         <div class="row container">
           <h2 class="header">Bio</h2>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -49,7 +70,7 @@
             </div>
         </div>
       </div>
-      <div class="section projectSection">
+      <div class="section projectSection" id="project">
         <div class="row container">
           <h2 class="header">Projects</h2>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -130,23 +151,18 @@
       <div class="parallax-container">
         <div class="parallax"><img src="images/reef.jpg"></div>
       </div>
-      <div class="section workSection">
+      <div class="section workSection" id="work">
         <div class="row container">
           <h2 class="header">Work Experience</h2>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
       </div>
-      <div class="section educationSection">
+      <div class="section educationSection" id="education">
         <div class="row container">
           <h2 class="header">Education</h2>
           <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
         </div>
       </div>
 </body>
-  <script>
-      $(document).ready(function(){
-        $('.parallax').parallax();
-      });
-
-  </script>
+  <script src="main.js"></script>
 </html>
