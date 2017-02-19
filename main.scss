@@ -24,29 +24,37 @@ $dark-2: #5A5050 * .8;
   margin-left: auto;
 }
 
-.navbar {
-  position: absolute;
-  bottom: 2%;
-  border-top: 1px solid $secondary;
+@media only screen and (min-width: 500px){
+  .navbar {
+    position: absolute;
+    bottom: 2%;
+    border-top: 1px solid $secondary;
+  }
+
+  .navbar li {
+    display: inline;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 4%;
+    padding-top: 15px;
+    border-top: 2px solid transparent;
+    transition: border-top 1s, background-color 1s;
+  }
+
+  .navbar li:hover {
+    border-top: 2px solid $secondary;
+    background-color: $accent;
+  }
+
+  .navbar a {
+    color: $secondary;
+  }
 }
 
-.navbar li {
-  display: inline;
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 4%;
-  padding-top: 15px;
-  border-top: 2px solid transparent;
-  transition: border-top 1s, background-color 1s;
-}
-
-.navbar li:hover {
-  border-top: 2px solid $secondary;
-  background-color: $accent;
-}
-
-.navbar a {
-  color: $secondary;
+@media only screen and (max-width: 499px){
+  .navbar{
+    display: none;
+  }
 }
 
 .bioSection {
