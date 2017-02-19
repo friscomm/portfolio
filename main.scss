@@ -3,11 +3,12 @@ $secondary: #A2D4AB;
 $base: #3EACA8;
 $accent: #547A82;
 $dark: #5A5050;
+$dark-2: #5A5050 * .8;
 
 
 .homepage {
     background: linear-gradient($primary 2%,$secondary 25%,$base ,$accent);
-    color: $dark;
+    color: $dark-2;
 }
 
 .homepage h1 {
@@ -18,4 +19,24 @@ $dark: #5A5050;
   width: 20%;
   display: block;
   margin: auto;
+}
+
+.bioSection {
+  background-color: $base;
+  color: $dark-2;
+}
+
+.projectSection {
+  background-color: $accent;
+  color: $base;
+}
+
+.workSection {
+  background-color: $base;
+  color: $dark-2;
+}
+
+.educationSection {
+  background-color: $primary;
+  color: $dark;
 }
